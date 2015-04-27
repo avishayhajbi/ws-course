@@ -1,0 +1,7 @@
+{
+  "name": "ws-course",
+  "description": "shenkar course",
+  "repository": "https://github.com/avishayhajbi/ws-course",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node",  "url"]
+}

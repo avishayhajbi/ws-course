@@ -5,6 +5,7 @@ function PingPong () {
 	this.goal = 10;
 	this.turn =0;
 	this.players = []; 
+	this.results = [];
 	events.EventEmitter.call(this);
 	
 	this.init = function (p1,p2, goal){
@@ -13,6 +14,7 @@ function PingPong () {
 		this.turn =0;
 		exit=false;
 		this.players = [];
+		this.results = [];
 		this.players.push(p1,p2);
 	};
 

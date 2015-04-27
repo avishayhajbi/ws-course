@@ -13,14 +13,7 @@ pingPong.on("hitsChanged",global_func.goodHit);
 pingPong.on("hitsNotChanged",global_func.badHit);
 pingPong.on("gameEnd",global_func.glorifyTheWinner);
 
-pingPong.init("avishay","haim",8);
-pingPong.play();
 
-pingPong.init("peleg","natalie",10);
-pingPong.play();
-
-pingPong.init("ofir","vidran",20);
-pingPong.play();
 
 
 var server = http.createServer(function (req, res){
@@ -28,6 +21,16 @@ var server = http.createServer(function (req, res){
 		console.log("server runing")
 		res.writeHead(200,{"contant-Type":"text/plain"})
 		res.write("welcome to the ping pong game -- have fun");
+		
+		pingPong.init("avishay","haim",8);
+		pingPong.play();
+		res.write(pingPong.results[pingPong.results.length-1])
+		pingPong.init("peleg","natalie",10);
+		pingPong.play();
+		res.write(pingPong.results[pingPong.results.length-1])
+		pingPong.init("ofir","vidran",20);
+		pingPong.play();
+		res.write(pingPong.results[pingPong.results.length-1])
 		res.end()
 	}
 	else {
