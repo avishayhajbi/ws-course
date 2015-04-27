@@ -38,4 +38,4 @@ var server = http.createServer(function (req, res){
 		res.write("unknown path");
 		res.end()
 	} 
-}).listen(8080,"localhost");
+}).listen(process.env.PORT || 8080 ,"localhost");
