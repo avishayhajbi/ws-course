@@ -1,0 +1,26 @@
+{
+  "name": "ping_pong_game",
+  "version": "0.0.1",
+  "description": "ws course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "not yet"
+  },
+  "keywords": [
+    "http",
+    "events",
+    "util"
+  ],
+  "author": "avishay",
+  "license": "shenkar",
+  "dependencies": {
+    "events": "^1.0.2",
+    "http": "0.0.0",
+    "request": "^2.55.0",
+    "util": "^0.10.3"
+  }
+}
