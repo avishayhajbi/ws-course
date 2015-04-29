@@ -1,3 +1,9 @@
+var events = require('events');
+var util = require('util');
+var global_func = require('./global.js');
+
+util.inherits(PingPong, events.EventEmitter);
+
 var exit =false;
 
 function PingPong () {
@@ -48,7 +54,12 @@ function PingPong () {
 		else console.log("still on game")
 	};
 
+	this.on("hitsChanged",global_func.goodHit);
+	this.on("hitsNotChanged",global_func.badHit);
+	this.on("gameEnd",global_func.glorifyTheWinner);
+
 };
+
 
 
 module.exports = PingPong;

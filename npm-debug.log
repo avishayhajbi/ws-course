@@ -1,29 +1,95 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'os' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
 4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart ping_pong_game@0.0.1
-7 info start ping_pong_game@0.0.1
-8 verbose unsafe-perm in lifecycle true
-9 info ping_pong_game@0.0.1 Failed to exec start script
-10 error ping_pong_game@0.0.1 start: `node index.js`
-10 error Exit status 8
-11 error Failed at the ping_pong_game@0.0.1 start script.
-11 error This is most likely a problem with the ping_pong_game package,
-11 error not with npm itself.
-11 error Tell the author that this fails on your system:
-11 error     node index.js
-11 error You can get their info via:
-11 error     npm owner ls ping_pong_game
-11 error There is likely additional logging output above.
-12 error System Windows_NT 6.1.7601
-13 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-14 error cwd D:\Documents\Documents\GitHub\ws-course
-15 error node -v v0.10.32
-16 error npm -v 1.4.28
-17 error code ELIFECYCLE
-18 verbose exit [ 1, true ]
+5 warn package.json events@1.0.2 events is also the name of a node core module.
+6 warn package.json http@0.0.0 http is also the name of a node core module.
+7 warn package.json http@0.0.0 No description
+8 warn package.json http@0.0.0 No repository field.
+9 warn package.json http@0.0.0 No README data
+10 warn package.json util@0.10.3 util is also the name of a node core module.
+11 verbose readDependencies using package.json deps
+12 verbose cache add [ 'os', null ]
+13 verbose cache add name=undefined spec="os" args=["os",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'os',
+14 verbose parsed url   path: 'os',
+14 verbose parsed url   href: 'os' }
+15 silly lockFile 999a3419-os os
+16 verbose lock os C:\Users\Avishay\AppData\Roaming\npm-cache\999a3419-os.lock
+17 silly lockFile 999a3419-os os
+18 silly lockFile 999a3419-os os
+19 verbose addNamed [ 'os', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile 46c56d42-os os@
+22 verbose lock os@ C:\Users\Avishay\AppData\Roaming\npm-cache\46c56d42-os.lock
+23 silly addNameRange { name: 'os', range: '*', hasData: false }
+24 verbose request where is /os
+25 verbose request registry https://registry.npmjs.org/
+26 verbose request id c160d9854c4facd8
+27 verbose url raw /os
+28 verbose url resolving [ 'https://registry.npmjs.org/', './os' ]
+29 verbose url resolved https://registry.npmjs.org/os
+30 verbose request where is https://registry.npmjs.org/os
+31 info trying registry request attempt 1 at 19:59:22
+32 http GET https://registry.npmjs.org/os
+33 http 404 https://registry.npmjs.org/os
+34 verbose headers { date: 'Wed, 29 Apr 2015 16:59:25 GMT',
+34 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+34 verbose headers   'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=0',
+34 verbose headers   'content-length': '51',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   age: '0',
+34 verbose headers   'x-served-by': 'cache-fra1237-FRA',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1430326764.891518,VS0,VE712',
+34 verbose headers   'keep-alive': 'timeout=10, max=50',
+34 verbose headers   connection: 'Keep-Alive' }
+35 silly registry.get cb [ 404,
+35 silly registry.get   { date: 'Wed, 29 Apr 2015 16:59:25 GMT',
+35 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+35 silly registry.get     'content-type': 'application/json',
+35 silly registry.get     'cache-control': 'max-age=0',
+35 silly registry.get     'content-length': '51',
+35 silly registry.get     'accept-ranges': 'bytes',
+35 silly registry.get     via: '1.1 varnish',
+35 silly registry.get     age: '0',
+35 silly registry.get     'x-served-by': 'cache-fra1237-FRA',
+35 silly registry.get     'x-cache': 'MISS',
+35 silly registry.get     'x-cache-hits': '0',
+35 silly registry.get     'x-timer': 'S1430326764.891518,VS0,VE712',
+35 silly registry.get     'keep-alive': 'timeout=10, max=50',
+35 silly registry.get     connection: 'Keep-Alive' } ]
+36 silly lockFile 46c56d42-os os@
+37 silly lockFile 46c56d42-os os@
+38 error 404 404 Not Found: os
+38 error 404
+38 error 404 'os' is not in the npm registry.
+38 error 404 You should bug the author to publish it
+38 error 404 It was specified as a dependency of 'ping_pong_game'
+38 error 404
+38 error 404 Note that you can also install from a
+38 error 404 tarball, folder, or http url, or git url.
+39 error System Windows_NT 6.1.7601
+40 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "os"
+41 error cwd D:\Documents\Documents\GitHub\ws-course
+42 error node -v v0.10.32
+43 error npm -v 1.4.28
+44 error code E404
+45 verbose exit [ 1, true ]
