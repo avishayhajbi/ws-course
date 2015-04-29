@@ -13,7 +13,7 @@ var server = http.createServer(function (req, res){
 	if (req.url === '/') {
 		
 		res.writeHead(200,{"contant-Type":"text/plain"})
-		res.write("welcome to the ping pong game -- have fun"+ os.EOL);
+		res.write("welcome to the ping pong game -- have fun (refresh the page !)"+ os.EOL);
 		
 		pingPong.init("avishay","haim",8);
 		pingPong.play();
