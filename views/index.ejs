@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+        <!-- jquery imports -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+        
+        <link href="css/index.css" type="text/css" rel="stylesheet" >
+        <script src="js/index.js" type="text/javascript"></script>
+		<title>Shoes</title>
+	</head>
+	<body>
+		<h1> <%= title %> </h1>
+		<p> structure: <%= structure %> </p>
+		<ul> 
+			<% for (index in info) { %>
+				<li class="info"> <%= info[index] %></li>
+				<li class="desc"> <%= desc[index] %></li>
+			<% } %>
+		</ul>
+		<h4> any time you see a multiple params you can ignore the params you want</h4>
+
+	</body>
+</html>

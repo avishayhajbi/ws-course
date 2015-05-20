@@ -1,0 +1,9 @@
+li{
+	list-style-type: none;
+}
+.info{
+	color: red;
+}
+.desc{
+	margin-bottom: 15px;
+}
