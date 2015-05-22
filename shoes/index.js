@@ -23,13 +23,16 @@ Shoes.prototype.init = function (){
   var temp = { id: "123" , size: "42"};
   this.shoes.push(new Shoe(temp));
   this.index.push(temp.id);
+
   temp = { id: "1234" , company : "nike"};
   this.shoes.push(new Shoe(temp));
   this.index.push(temp.id);
-  temp = { id: "1235" , company: "adidas"};
+
+  temp = { id: "12345" , company: "adidas"};
   this.shoes.push(new Shoe(temp));
   this.index.push(temp.id);
-  temp = { id: "12356", useFor: "walking"};
+
+  temp = { id: "123456", useFor: "walking"};
   this.shoes.push(new Shoe(temp));
   this.index.push(temp.id);
   console.log(this.shoes);
@@ -74,10 +77,16 @@ Shoes.prototype.getShoeById = function (id){
 Shoes.prototype.findShoe = function (data){
   var temp = [];
   temp=this.shoes.filter(function(v){
-    return data.id ||v.id == v.id && 
-    data.size ||v.size== v.size && 
-    data.company ||v.company== v.company && 
-    data.useFor ||v.useFor== v.useFor    
+    console.log(v)
+    // return data.id ||v.id == v.id && 
+    // data.size ||v.size== v.size && 
+    // data.company ||v.company== v.company && 
+    // data.useFor ||v.useFor== v.useFor
+
+     return data.id == v.id && 
+    data.size == v.size && 
+    data.company == v.company && 
+    data.useFor == v.useFor    
   });
   /*
   var temp=this.shoes.filter(function(v){
